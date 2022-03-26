@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Here you can download your video </h1>
+    <!-- {% if form %} -->
+    <form method="post">
+      {{form.as_p}}
+      {%csrf_token%}
+      <input type="submit" name="" value="DOWNLOAD">
+    </form>
+    <!-- {%endif%} -->
+    {% if stream %}
+
+    <p>your video is downloaded:</p>
+    {%endif%}
+  </body>
+</html>
